@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Subscription Plans</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {font-family: Arial; text-align:center; background:#f5f5f5;}
+    h1 {margin-top:20px;}
+    .container {display:flex; flex-wrap:wrap; justify-content:center;}
+    .card {
+      background:white; padding:20px; margin:15px;
+      border-radius:10px; width:260px;
+      box-shadow:0 0 10px rgba(0,0,0,0.1);
+    }
+    .price {font-size:24px; color:green;}
+    .duration {color:#555; margin-bottom:10px;}
+    button {
+      background:#007bff; color:white;
+      border:none; padding:10px 15px;
+      border-radius:5px; cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🔥 Subscription Plans 🔥</h1>
+
+<div class="container">
+
+  <div class="card">
+    <h2>Basic Plan</h2>
+    <p class="price">₹99</p>
+    <p class="duration">Duration: 1 Month</p>
+    <p>✔ Basic Access</p>
+    <button onclick="buy('Basic - 1 Month')">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <h2>Standard Plan</h2>
+    <p class="price">₹499</p>
+    <p class="duration">Duration: 6 Months</p>
+    <p>✔ Full Access</p>
+    <button onclick="buy('Standard - 6 Months')">Buy Now</button>
+  </div>
+
+  <div class="card">
+    <h2>Premium Plan</h2>
+    <p class="price">₹899</p>
+    <p class="duration">Duration: 1 Year</p>
+    <p>✔ All Features</p>
+    <button onclick="buy('Premium - 1 Year')">Buy Now</button>
+  </div>
+
+</div>
+
+<script>
+function buy(plan){
+  alert(plan + " selected!");
+}
+</script>
+
+</body>
+</html>
